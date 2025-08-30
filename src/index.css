@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Desktop wallpaper helpers */
+html, body, #root { height: 100%; }
+body { background: #0b0f14; }
+
+
+* { box-sizing: border-box; }
