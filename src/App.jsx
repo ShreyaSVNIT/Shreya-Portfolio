@@ -1,12 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import Hero from "./components/Hero"
+import Dock from "./components/Dock"
+import Boot from "./components/Boot"
+import WindowManager from "./components/WindowManager"
 
 export default function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-desk-bg text-white">
-      <h1 className="text-4xl font-bold">Tailwind is working ✅</h1>
+    <div className="min-h-screen relative text-white">
+      {/* Boot screen */}
+      <Boot />
+
+      {/* Hero / desktop wallpaper */}
+      <Hero />
+
+      {/* Window Manager → handles About / Projects / Contact windows */}
+      <WindowManager />
+
     </div>
   )
 }
